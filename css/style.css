@@ -1,0 +1,299 @@
+/* primits */
+/* jainury */
+* {
+  box-sizing: border-box;
+}
+html {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+#navbar {
+  width: 100vw;
+  height: 60px;
+  background-color: orange;
+  color: whitesmoke;
+}
+.wrapper_navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  max-width: 1080px;
+  margin: auto;
+  height: inherit;
+}
+.wrapper_navbar .menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.wrapper_navbar .menu ul a:hover {
+  color: orangered;
+  border-bottom: 2px solid orangered;
+}
+.wrapper_navbar .brand h4 {
+  user-select: none;
+  font-size: 18px;
+  font-weight: 300;
+}
+/* form */
+#form_mahasiswa {
+  width: 100vw;
+  height: 800px;
+}
+.wrapper_form {
+  width: inherit;
+  height: inherit;
+  padding: 20px;
+}
+.wrapper_form h4 {
+  user-select: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 55px 20px 30px 20px;
+}
+.wrapper_form .form_data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: inherit;
+  max-width: 650px;
+  height: auto;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 1px 2px 8px gray;
+}
+.wrapper_form .form_data form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: inherit;
+  padding-top: 20px;
+  gap: 20px;
+}
+.wrapper_form .form_data form .form_input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 80px;
+  padding: 10px 25px 10px 25px;
+  gap: 10px;
+}
+.wrapper_form .form_data form .form_input textarea {
+  resize: none;
+  padding: 12px;
+  border: 1px solid gray;
+  outline: none;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.wrapper_form .form_data form #alamat {
+  width: inherit;
+  height: 150px;
+}
+.wrapper_form .form_data form .form_input input {
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid gray;
+  outline: none;
+  font-size: 15px;
+}
+.wrapper_form .form_data form #jenis_kelamin {
+  width: 200px;
+  height: 40px;
+  border: 1px solid gray;
+  outline: none;
+}
+.wrapper_form .form_data form #button_input {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: inherit;
+  height: inherit;
+  padding: 20px 20px;
+}
+.wrapper_form .form_data form .form_input button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: whitesmoke;
+  background-color: #38a1df;
+}
+.wrapper_form .form_data form .form_input button:hover {
+  width: 150px;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: whitesmoke;
+  background-color: #2f7ca8;
+}
+/* table */
+#table {
+  margin-top: 50px;
+  width: 100vw;
+  height: auto;
+}
+.wrapper_table {
+  width: inherit;
+  max-width: 1080px;
+  height: inherit;
+  margin: auto;
+  padding: 20px;
+}
+.wrapper_table table {
+  background-color: #e6e6e6;
+  width: 100%;
+  max-height: 1080px;
+  height: auto;
+  border: 1px solid red;
+  overflow-y: auto;
+}
+.wrapper_table table th {
+  color: whitesmoke;
+  background-color: #5587c0;
+}
+.wrapper_table table,
+.wrapper_table th,
+.wrapper_table td {
+  border: 2px solid whitesmoke;
+  border-collapse: collapse;
+  padding: 20px;
+}
+.wrapper_table table .table_button a {
+  width: 70px;
+  height: 30px;
+  color: whitesmoke;
+  margin: 5px;
+  padding: 10px;
+}
+.wrapper_table table .table_button a:hover {
+  background-color: #1b1b1b;
+  opacity: 0.5;
+}
+#floating {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 190vh;
+  background-color: rgba(94, 107, 114, 0.357);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.wrapper_floating {
+  display: flex;
+  width: 500px;
+  height: 530px;
+  background-color: whitesmoke;
+  box-shadow: 1px 2px 8px gray;
+  z-index: 9999;
+}
+.wrapper_floating form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px 20px 20px 20px;
+  gap: 15px;
+  width: 500px;
+  height: 550px;
+  background-color: whitesmoke;
+  position: relative;
+}
+.wrapper_floating form p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  position: absolute;
+  top: -70px;
+  right: -15px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+form .floating_grub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 15px;
+  width: 100%;
+  height: 90px;
+}
+form .floating_grub input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid gray;
+  outline: none;
+  padding: 10px;
+}
+form .floating_grub select {
+  width: 200px;
+  height: 50px;
+  border: 1px solid gray;
+  outline: none;
+  padding: 10px;
+}
+form #edit_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px;
+  gap: 10px;
+  width: 100%;
+  height: 80px;
+}
+form #edit_button button {
+  width: 100px;
+  height: 40px;
+  background-color: #2f7ca8;
+  color: whitesmoke;
+  border: none;
+  outline: none;
+}
+form #edit_button button:hover {
+  background-color: #285d7c;
+  color: whitesmoke;
+}

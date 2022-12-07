@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>CRUD</title>
+  </head>
+  <body>
+    <!-- primits -->
+    <div id="navbar" class="navbar">
+      <div class="wrapper_navbar">
+        <div class="brand"><h4> INPUT DATA MAHASISWA</h4></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#form_mahasiswa">Input Mahasiswa</a></li>
+            <li><a href="#table">Daftar Mahasiswa</a>         </li>
+          </ul>
+        </div>
+        <!-- <div class="burger">
+          <div class="image_burger"><img src="" alt=""></div>
+        </div> -->
+      </div>
+    </div>
+    <main>
+      <section id="form_mahasiswa" class="form_mahasiswa">
+        <div class="wrapper_form">
+          <h4>form input data mahasiswa</h4>
+          <div class="form_data">
+            <form id="input_mahasiswa" action="" autocomplete="off">
+              <div class="form_input">
+                <label for="nim">NIM :</label>
+                <input id="nim" type="number" required />
+              </div>
+              <div class="form_input">
+                <label for="nim">NAMA :</label>
+                <input id="nama" type="text" required />
+              </div>
+              <div id="alamat" class="form_input">
+                <label for="nim">ALAMAT :</label>
+                <textarea name="alamat" id="alamat" cols="50" rows="50"></textarea>
+              </div>
+              <div class="form_input"    >
+                <label for="jenis_kelamin">JENIS KELAMIN :</label>
+                <select id="jenis_kelamin" name="jenis_kelamin">
+                  <option value="laki - laki">Laki - Laki</option>
+                  <option value="perempuan">Perempuan</option>
+                </select>
+              </div>
+              <div id="button_input" class="form_input">
+                <button type="submit" id="create" >submit</button>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div id="floating" class="floating">
+        <div class="wrapper_floating">
+          <form id="form_edit_mahasiswa" action="" autocomplete="off">
+            <p id="close" onclick="cl()">x</p>
+            <div class="floating_grub">
+              <label for="nim">NIM</label>
+              <input id="nim_edit" type="text" required>
+            </div>
+            <div class="floating_grub">
+              <label for="nama">NAMA</label>
+              <input id="nama_edit" type="text" required>
+            </div><div class="floating_grub">
+              <label for="alamat">ALAMAT</label>
+              <input id="alamat_edit" type="text" required>
+            </div><div class="floating_grub">
+              <label for="jenis_kelamin">JENIS KELAMIN</label>
+              <select name="jenis_kelamin" id="jenis_kelamin_edit">
+                <option value="laki - laki">laki - laki</option>
+                <option value="perempuan">perempuan</option>
+              </select>
+            </div><div id="edit_button" class="floating_grub">
+              <button type="submit" >Edit</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <div id="table" class="table">
+        <div class="wrapper_table">
+          <table id="data_mahasiwa_list">
+            <thead>
+              <tr>
+                <th>NIM</th>
+                <th>NAMA</th>
+                <th>ALAMAT</th>
+                <th>JENIS KELAMIN</th>
+                <th style="width: 150px;"></th>
+              </tr>
+            </thead>
+            <tbody>
+          </table>
+      </div>
+      </div>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
